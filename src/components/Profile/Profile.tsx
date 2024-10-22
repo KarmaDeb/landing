@@ -24,9 +24,7 @@ function Profile(): JSX.Element {
                     <Anchor target='_blank' rel='noopener noreferrer' href='https://en.wikipedia.org/wiki/Web_development#Full-stack_development' size='lg'>full-stack</Anchor>
                     {' '}developer. I am a{' '}
                     <DateFrom date='06-08-2003' />
-                    {' '}yo' male. I am currently studying web development in{' '}
-                    <Anchor target='_blank' rel='noopener noreferrer' href='https://esliceu.cat/' size=''>Es Liceu</Anchor>
-                    , in Spain at Palma de Mallorca
+                    {' '}yo' male. I am currently studying web development in Spain
                 </Text>
 
                 <Group>
