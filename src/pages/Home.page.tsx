@@ -1,10 +1,12 @@
-import { AppShell, Burger, Title, Text, Group } from '@mantine/core';
+import { AppShell, Burger, Title, Text, Group, NavLink } from '@mantine/core';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { Welcome } from '../components/Welcome/Welcome';
+import Home from '../components/Home/Home';
 import { useDisclosure } from '@mantine/hooks';
-import classes from './Home.module.css';
+import { FaHome, FaSchool, FaCalendarDay } from 'react-icons/fa';
+import { useState } from 'react';
 
 export function HomePage() {
+	const [site, setSite] = useState<string>('index');
 	const [opened, { toggle }] = useDisclosure();
 
 	return (
@@ -16,30 +18,52 @@ export function HomePage() {
 					breakpoint: 'sm',
 					collapsed: { mobile: !opened },
 				}}
-				padding="md">
+				>
 				<AppShell.Header>
-					<Burger
-						opened={opened}
-						onClick={toggle}
-						hiddenFrom="sm"
-						size="sm"
-					/>
-					<Group justify='space-between'>
+					<Group justify='space-between' wrap='nowrap'>
+						<Burger
+							opened={opened}
+							onClick={toggle}
+							hiddenFrom="sm"
+							size="sm"
+						/>
+
 						<Title ml='sm'>
-							<Text className={classes.title} inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'blueviolet' }}>
+							<Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'blueviolet' }}>
 								KarmaDev 
 							</Text>
-							{' '}landing
 						</Title>
 						
 						<ColorSchemeToggle />
 					</Group>
 				</AppShell.Header>
 
-				<AppShell.Navbar p="md">Navbar</AppShell.Navbar>
+				<AppShell.Navbar p="md">
+					<NavLink 
+						label='Home'
+						active={site === 'index'}
+						onClick={() => setSite('index')}
+						leftSection={<FaHome/>}
+						color='violet'
+						/>
+					<NavLink 
+						label='School projects'
+						leftSection={<FaSchool/>}
+						color='violet'
+						childrenOffset={28}
+						>
+							<NavLink
+								label='Schedule'
+								active={site === 'schedule'}
+								onClick={() => setSite('schedule')}
+								leftSection={<FaCalendarDay/>}
+								color='violet'
+							/>
+					</NavLink>
+				</AppShell.Navbar>
 
 				<AppShell.Main>
-					<Welcome />
+					<Home />
 				</AppShell.Main>
 			</AppShell>
 		</>

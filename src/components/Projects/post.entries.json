@@ -1,0 +1,92 @@
+{
+    "entries": [
+        {
+            "title": "What happened with LockLogin?",
+            "content": [
+                "Hello again!",
+                "\n",
+                "For those who don't know, [LockLogin](https://www.spigotmc.org/resources/75156/) is a minecraft plugin",
+                "designed for servers which want to protect user accounts behind a password. The plugin included many",
+                "features such as 2fa authentication, brute force protection measures and many more. The problem is that",
+                "development for that project became harder and harder over the time as more features were introduced, for",
+                "that reason, LockLogin development stopped in order to release [LockLogin2](https://gitlab.com/karmadev/locklogin).",
+                "\n\n",
+                "The problem is that, LockLogin2 is based on LockLogin, which means it would be also hard to maintain at",
+                "long-term, for which reason LockLogin project was completely abandoned, in favour of [AuthLock](https://gitlab.com/karmadev/authlock).",
+                "\n\n\n",
+                "What is AuthLock?",
+                "\n\n",
+                "AuthLock is, like LockLogin, an authentication minecraft plugin which is still in development, the main difference",
+                "between AuthLock and LockLogin, is that AuthLock is being made slowly, ensuring the code remains clean and as simple",
+                "as possible.",
+                "\n\n",
+                "In conclusion; LockLogin project has been completely abandoned, in favour of AuthLock project, which release date is still",
+                "to be announced"
+            ],
+            "date": 1729611751,
+            "tags": [
+                {
+                    "name": "development",
+                    "color": "blueviolet"
+                },
+                {
+                    "name": "locklogin",
+                    "color": "purple"
+                },
+                {
+                    "name": "minecraft",
+                    "color": "brown"
+                },
+                {
+                    "name": "spigot",
+                    "color": "orange"
+                },
+                {
+                    "name": "java",
+                    "color": "orange"
+                }
+            ]
+        },
+        {
+            "title": "Hello world",
+            "content": [
+                "Hello everyone! This is the first post entry in my portfolio. This portfolio has been",
+                "made using react and [Mantine](https://ui.mantine.dev/).",
+                "\n\n",
+                "This portfolio was made as part of a school project, the project required me to make a portfolio",
+                "for which I've decided to make a portfolio which also serves as a landing page for all my projects.",
+                "\n",
+                "During the development I've been facing some issues, for instance; the site automatically detects my age",
+                "based on my birthday date `06/08/2003`, for which I did a react component, which makes the calculations for",
+                "it. The content of the blog posts also use a custom react component, because the blog doesn't connect directly",
+                "to a database, I make all my posts on a json file, which the site reads. The content of the posts use a similar",
+                "syntax to markdown, which the react component is able to parse and map into Mantine components.",
+                "\n\n",
+                "I know I've could just made a simple website, without using react nor \"components\", in fact, it was not a",
+                "requirement for the school project, but I decided to make it with react because this school project is planned to",
+                "be my public final portfolio. And if you are reading this, it means that it just happened.",
+                "\n\n",
+                "Thanks for reading! ~Karma"
+            ],
+            "date": 1729549293,
+            "tags": [
+                {
+                    "name": "welcome",
+                    "color": "blue"
+                },
+                {
+                    "name": "portfolio",
+                    "color": "blue"
+                },
+                {
+                    "name": "react",
+                    "color": "darkcyan"
+                },
+                {
+                    "name": "mantine",
+                    "color": "darkblue"
+                }
+            ]
+        }
+    ]
+}

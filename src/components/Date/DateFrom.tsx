@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function DateFrom({ date }: { date: string }): JSX.Element {
     const [yearsPassed, setYearsPassed] = useState<string | number | null>(null);

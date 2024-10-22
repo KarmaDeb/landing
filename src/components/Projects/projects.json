@@ -1,0 +1,125 @@
+{
+    "projects": [
+        {
+            "title": "Kyle",
+            "target": "https://gitlab.com/karmadev/kyle",
+            "description": [
+                "Kyle (KarmaDev's yaml library extension) is an extension which uses Snakeyaml",
+                "java library to process and create yaml files. It has comment supports and has",
+                "the default implementation for managing yaml files, yaml files based on another",
+                "yaml file or generate a yaml file from an existing yaml file."
+            ],
+            "languages": [
+                {
+                    "name": "Java",
+                    "color": "orange"
+                },
+                {
+                    "name": "Maven",
+                    "color": "darkred"
+                },
+                {
+                    "name": "Gradle",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "title": "KSon",
+            "target": "https://gitlab.com/karmadev/kson",
+            "description": [
+                "KSon is a lightweight and simple java library to work with json. The library can",
+                "read/write json files, and makes the use of objects to interact with the json information",
+                "in the code. The json parsing of the library is strict, which means is not error-tolerant",
+                "which makes it a very solid choose for parsing json files which are required to be correct."
+            ],
+            "languages": [
+                {
+                    "name": "Java",
+                    "color": "orange"
+                },
+                {
+                    "name": "Maven",
+                    "color": "darkred"
+                },
+                {
+                    "name": "Gradle",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "title": "LogMe",
+            "target": "https://gitlab.com/karmadev/logme",
+            "description": [
+                "LogMe is a lightweight java library, which exists as an alternative to Log4j. The library",
+                "was made thinking about simplicity. The library outputs everything to console and file by",
+                "default, something you must manually configure on Log4j. The library has a default implementation",
+                "for general purpose development, and spigot (minecraft server) development as an example of",
+                "extra implementations."
+            ],
+            "languages": [
+                {
+                    "name": "Java",
+                    "color": "orange"
+                },
+                {
+                    "name": "Maven",
+                    "color": "darkred"
+                },
+                {
+                    "name": "Gradle",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "title": "Versiona",
+            "target": "https://gitlab.com/karmadev/versiona",
+            "description": [
+                "Versiona is a java library, which helps on maintaining all the good practices when versioning",
+                "your products. Versiona is compatible with X.Y.Z-BUILD and X.Y.Z.A-BUILD version schemas, and it",
+                "has a built-in version checker, which makes version-checkers for your products easier, as the logic",
+                "for it is completely handled by this library."
+            ],
+            "languages": [
+                {
+                    "name": "Java",
+                    "color": "orange"
+                },
+                {
+                    "name": "Maven",
+                    "color": "darkred"
+                },
+                {
+                    "name": "Gradle",
+                    "color": "blue"
+                }
+            ]
+        },
+        {
+            "title": "API server",
+            "target": "https://github.com/KarmaDeb/nodejs_api_server",
+            "description": [
+                "API server is a project which was made as a request, for an user which requested an API server which",
+                "serves content under programically generated URLs. The client makes a request to the API server, which",
+                "provides then a response with a key, and the route mappings. The route mappings uses codes, to prevent",
+                "exposing them to the public. The API server also serves as a way of validating requests for an API service"
+            ],
+            "languages": [
+                {
+                    "name": "TypeScript",
+                    "color": "darkblue"
+                },
+                {
+                    "name": "Bun",
+                    "color": "gray"
+                },
+                {
+                    "name": "NodeJS",
+                    "color": "green"
+                }
+            ]
+        }
+    ]
+}
