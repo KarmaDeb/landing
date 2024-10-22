@@ -69,7 +69,7 @@ function Info(): JSX.Element {
                                 <FaCss3/> CSS
                             </Anchor>
                             {' '}even though I now make websites using{' '}
-                            <Anchor href='https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='_blank'  rel='noopener noreferrer'>
+                            <Anchor href='https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='_blank'  rel='noopener noreferrer' underline='never'>
                                 <FaReact/> React
                             </Anchor>
                             {' '}using{' '}

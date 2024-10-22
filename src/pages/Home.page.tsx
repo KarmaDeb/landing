@@ -5,9 +5,23 @@ import { useDisclosure } from '@mantine/hooks';
 import { FaHome, FaSchool, FaCalendarDay } from 'react-icons/fa';
 import { useState } from 'react';
 
+import './Home.module.css';
+import Schedule from '@/components/Schedule/Schedule';
+
 export function HomePage() {
 	const [site, setSite] = useState<string>('index');
 	const [opened, { toggle }] = useDisclosure();
+
+	const renderContent = () => {
+		switch (site) {
+			case 'index':
+				return <Home />;
+			case 'schedule':
+				return <Schedule />;
+			default:
+				return <Text gradient={{from: 'darkred', to: 'red'}}>Page not found</Text>;
+		}
+	}
 
 	return (
 		<>
@@ -63,7 +77,7 @@ export function HomePage() {
 				</AppShell.Navbar>
 
 				<AppShell.Main>
-					<Home />
+					{renderContent()}
 				</AppShell.Main>
 			</AppShell>
 		</>

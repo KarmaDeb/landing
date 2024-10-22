@@ -1,0 +1,48 @@
+table {
+	border: 1px solid #5c5c5c;
+	border-spacing: 0;
+}
+
+table td {
+	text-align: center;
+	border: 1px solid #5c5c5c;
+
+	margin: 1.5vmin;
+	padding: 1.5vmin;
+}
+
+table td[class] {
+	color: black;
+}
+
+table td.text-secondary span {
+	display: block;
+}
+
+table td.class-client-web-dev {
+	background-color: #9d83ce;
+}
+
+table td.web-design-dev {
+	background-color: #9e932f;
+}
+
+table td.class-web-app-deploy {
+	background-color: #4891cc;
+}
+
+table td.class-enterprise {
+	background-color: #5783a7;
+}
+
+table td.class-server-web-dev {
+	background-color: #389c3b;
+}
+
+table td.time-break {
+	background-color: #9c3862;
+}
+
+.teacher {
+	text-transform: uppercase;
+}
