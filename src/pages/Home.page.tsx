@@ -2,14 +2,15 @@ import { AppShell, Burger, Title, Text, Group, NavLink } from '@mantine/core';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import Home from '../components/Home/Home';
 import { useDisclosure } from '@mantine/hooks';
-import { FaHome, FaSchool, FaCalendarDay } from 'react-icons/fa';
+import { FaHome, FaSchool, FaCalendarDay, FaUserLock } from 'react-icons/fa';
 import { useState } from 'react';
 
 import './Home.module.css';
 import Schedule from '@/components/Schedule/Schedule';
+import AuthLockHome from '@/components/AuthLock/Home/AuthLockHome';
 
 export function HomePage() {
-	const [site, setSite] = useState<string>('index');
+	const [site, setSite] = useState<('index'|'schedule'|'authlock')>('index');
 	const [opened, { toggle }] = useDisclosure();
 
 	const renderContent = () => {
@@ -18,6 +19,8 @@ export function HomePage() {
 				return <Home />;
 			case 'schedule':
 				return <Schedule />;
+			case 'authlock':
+				return <AuthLockHome />
 			default:
 				return <Text gradient={{from: 'darkred', to: 'red'}}>Page not found</Text>;
 		}
@@ -74,6 +77,13 @@ export function HomePage() {
 								color='violet'
 							/>
 					</NavLink>
+					<NavLink
+						label='AuthLock'
+						active={site === 'authlock'}
+						onClick={() => setSite('authlock')}
+						leftSection={<FaUserLock/>}
+						color='violet'
+						/>
 				</AppShell.Navbar>
 
 				<AppShell.Main>

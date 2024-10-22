@@ -1,0 +1,140 @@
+{
+    "migrations": [
+        {
+            "plugin": "AdvancedLogin",
+            "supported": false
+        },
+        {
+            "plugin": "Aegis",
+            "supported": false
+        },
+        {
+            "plugin": "AshLogin",
+            "supported": false
+        },
+        {
+            "plugin": "AtlasLobby",
+            "supported": false
+        },
+        {
+            "plugin": "AtlasLogin",
+            "supported": false
+        },
+        {
+            "plugin": "AuthMe",
+            "supported": false
+        },
+        {
+            "plugin": "Authy",
+            "supported": false
+        },
+        {
+            "plugin": "CrazyLogin",
+            "supported": false
+        },
+        {
+            "plugin": "DynamicBungeeAuth",
+            "supported": false
+        },
+        {
+            "plugin": "FastLogin",
+            "supported": false
+        },
+        {
+            "plugin": "InsaneLogin",
+            "supported": false
+        },
+        {
+            "plugin": "JPremium",
+            "supported": false
+        },
+        {
+            "plugin": "LibreLogin",
+            "supported": false
+        },
+        {
+            "plugin": "LimboAuth",
+            "supported": false
+        },
+        {
+            "plugin": "LockLogin",
+            "supported": false
+        },
+        {
+            "plugin": "LoginPlus",
+            "supported": false
+        },
+        {
+            "plugin": "LoginSecurity",
+            "supported": false
+        },
+        {
+            "plugin": "LoginSeguro",
+            "supported": false
+        },
+        {
+            "plugin": "MambaLogin",
+            "supported": false
+        },
+        {
+            "plugin": "NextAuth",
+            "supported": false
+        },
+        {
+            "plugin": "NtAuth",
+            "supported": false
+        },
+        {
+            "plugin": "OpeNLogin",
+            "supported": false
+        },
+        {
+            "plugin": "PirateLogin",
+            "supported": false
+        },
+        {
+            "plugin": "PixelLogin",
+            "supported": false
+        },
+        {
+            "plugin": "PrimeLogin",
+            "supported": false
+        },
+        {
+            "plugin": "StormLogin",
+            "supported": false
+        },
+        {
+            "plugin": "TGLogin",
+            "supported": false
+        },
+        {
+            "plugin": "TLogin",
+            "supported": false
+        },
+        {
+            "plugin": "UserLogin",
+            "supported": false
+        },
+        {
+            "plugin": "gLogin",
+            "supported": false
+        },
+        {
+            "plugin": "sLogin",
+            "supported": false
+        },
+        {
+            "plugin": "uLogin",
+            "supported": false
+        },
+        {
+            "plugin": "utLogin",
+            "supported": false
+        },
+        {
+            "plugin": "zLogin",
+            "supported": false
+        }        
+    ]
+}

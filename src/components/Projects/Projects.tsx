@@ -113,8 +113,8 @@ function Projects(): JSX.Element {
                 </Text>
             </Card>)
         } else {
-            return (<Paper m='sm' shadow="xl" radius='xl' withBorder p='sm'>
-                <Group mb='xl'>
+            return (<Card m='sm' shadow="xl" radius='xl' withBorder p='sm'>
+                <Group mb='xl' justify="space-between">
                     <Title>{project.title}</Title>
                     <Group>
                         {project.languages.map((badge: BadgesType) => makeBadge(badge))}
@@ -123,12 +123,12 @@ function Projects(): JSX.Element {
                 <Text>
                     {project.description.join(' ')}
                 </Text>
-            </Paper>)
+            </Card>)
         }
     }
 
     return (
-        <Tabs defaultValue="projects" mt={tab === 'blog' ? 'xl' : ''}>
+        <Tabs defaultValue="projects">
             <Tabs.List grow justify="center">
                 <Tabs.Tab onClick={() => {applyNewTab('projects')}} value="projects" leftSection={<FaFileCode style={iconStyle} />}>
                     <Title size='xl'>Projects</Title>
@@ -182,7 +182,7 @@ function Projects(): JSX.Element {
                         />
                 </Group>
                 
-                <ScrollArea h='500' offsetScrollbars scrollbarSize={4} scrollHideDelay={0}>
+                <ScrollArea h='700' offsetScrollbars scrollbarSize={4} scrollHideDelay={0}>
                     {entries.map((entry: EntryType) => {
                         if (matchesFilter(entry)) {
                             return (<Paper key={entry.title} m='sm' shadow="xl" radius='sm' withBorder p='sm'>

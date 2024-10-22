@@ -1,8 +1,8 @@
 import { createContext, useContext } from "react";
 
 export type TabContextType = {
-    tab: string;
-    setTab: (tab: string) => void;
+    tab: ('projects'|'blog');
+    setTab: (tab: ('projects'|'blog')) => void;
 }
 
 export const TabContext = createContext<TabContextType>({ 
