@@ -1,4 +1,4 @@
-import { Grid, ScrollArea, Paper, Title, Text, Group, Tabs, Badge, Anchor, rem, Spoiler, Autocomplete, MultiSelect } from "@mantine/core";
+import { Grid, ScrollArea, Paper, Title, Text, Group, Tabs, Badge, Anchor, rem, Spoiler, Autocomplete, MultiSelect, Card, Image } from "@mantine/core";
 import { DatePickerInput, DatesRangeValue, DateValue } from "@mantine/dates";
 import { FaFileCode, FaComment } from "react-icons/fa6";
 import { FaSearch } from 'react-icons/fa';
@@ -12,6 +12,8 @@ import UnixDate from "../Date/UnixDate";
 import { useTabContext } from '../TabContext';
 import { useState } from "react";
 
+import landingPreview from '../../assets/img/landing.preview.png';
+
 import '@mantine/dates/styles.css';
 
 type BadgesType = {
@@ -23,7 +25,8 @@ type ProjectType = {
     readonly title: string,
     readonly target: string,
     readonly description: string[],
-    readonly languages: BadgesType[]
+    readonly languages: BadgesType[],
+    readonly image?: string;
 }
 
 type EntryType = {
@@ -34,6 +37,10 @@ type EntryType = {
 }
 
 function Projects(): JSX.Element {
+    const imageSources = {
+        landingPreview: landingPreview
+    }
+
     const [dateRange, setDateRange] = useState<DatesRangeValue|undefined>();
     const [tagsRange, setTagsRange] = useState<string[]>([]);
     const [titleFilter, setTitleFilter] = useState<string>('');
@@ -84,6 +91,42 @@ function Projects(): JSX.Element {
 
     const tags: string[] = [...new Set(entries.flatMap(e => e.tags).map(e => e.name))];
 
+    function renderComponent(project: ProjectType): JSX.Element {
+        if (project.image) {
+            return (<Card m='sm' shadow="xl" radius='xl' withBorder p='sm'>
+                <Card.Section>
+                    <Image 
+                        src={imageSources[project.image as ('landingPreview')]} 
+                        height={160}
+                        alt={project.image}/>
+                </Card.Section>
+
+                <Group mb='xl' justify="space-between">
+                    <Title>{project.title}</Title>
+                    <Group>
+                        {project.languages.map((badge: BadgesType) => makeBadge(badge))}
+                    </Group>
+                </Group>
+
+                <Text>
+                    {project.description.join(' ')}
+                </Text>
+            </Card>)
+        } else {
+            return (<Paper m='sm' shadow="xl" radius='xl' withBorder p='sm'>
+                <Group mb='xl'>
+                    <Title>{project.title}</Title>
+                    <Group>
+                        {project.languages.map((badge: BadgesType) => makeBadge(badge))}
+                    </Group>
+                </Group>
+                <Text>
+                    {project.description.join(' ')}
+                </Text>
+            </Paper>)
+        }
+    }
+
     return (
         <Tabs defaultValue="projects" mt={tab === 'blog' ? 'xl' : ''}>
             <Tabs.List grow justify="center">
@@ -101,17 +144,7 @@ function Projects(): JSX.Element {
                         {projects.map((project: ProjectType) => (
                             <Grid.Col key={project.title} span={4}>
                                 <Anchor href={project.target} target='_blank' rel='noopener noreferrer' underline='never' style={{ color: 'var(--mantine-color-text)' }}>
-                                    <Paper m='sm' shadow="xl" radius='xl' withBorder p='sm'>
-                                        <Group mb='xl'>
-                                            <Title>{project.title}</Title>
-                                            <Group>
-                                                {project.languages.map((badge: BadgesType) => makeBadge(badge))}
-                                            </Group>
-                                        </Group>
-                                        <Text>
-                                            {project.description.join(' ')}
-                                        </Text>
-                                    </Paper>
+                                    {renderComponent(project)}
                                 </Anchor>
                             </Grid.Col>
                         ))}

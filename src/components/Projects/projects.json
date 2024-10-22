@@ -1,6 +1,38 @@
 {
     "projects": [
         {
+            "title": "Landing page",
+            "target": "https://github.com/KarmaDeb/landing",
+            "description": [
+                "The landing page, and portfolio. This is the site you are currently at. The",
+                "portfolio uses MantineUI, using react and vite with typescript. This portfolio",
+                "was made for a school project, but has been made public."
+            ],
+            "languages": [
+                {
+                    "name": "TypeScript",
+                    "color": "darkblue"
+                },
+                {
+                    "name": "React",
+                    "color": "darkcyan"
+                },
+                {
+                    "name": "Vite",
+                    "color": "darkred"
+                },
+                {
+                    "name": "Bun",
+                    "color": "gray"
+                },
+                {
+                    "name": "NodeJS",
+                    "color": "green"
+                }
+            ],
+            "image": "landingPreview"
+        },
+        {
             "title": "Kyle",
             "target": "https://gitlab.com/karmadev/kyle",
             "description": [
