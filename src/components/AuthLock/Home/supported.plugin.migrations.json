@@ -89,6 +89,10 @@
             "supported": false
         },
         {
+            "plugin": "nLogin",
+            "supported": false
+        },
+        {
             "plugin": "PirateLogin",
             "supported": false
         },
