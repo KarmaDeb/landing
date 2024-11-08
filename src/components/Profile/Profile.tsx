@@ -16,7 +16,7 @@ function Profile(): JSX.Element {
                 objectFit: 'cover'
             }} />
             <Container m='md'>
-                <Title>
+                <Title ta='center'>
                     Who am I?
                 </Title>
                 <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
@@ -24,10 +24,13 @@ function Profile(): JSX.Element {
                     <Anchor target='_blank' rel='noopener noreferrer' href='https://en.wikipedia.org/wiki/Web_development#Full-stack_development' size='lg'>full-stack</Anchor>
                     {' '}developer. I am a{' '}
                     <DateFrom date='06-08-2003' />
-                    {' '}yo' male. I am currently studying web development in Spain
+                    {' '}yo' male. I am currently studying web development in Spain.
+                    <br/>
+                    I speak Spanish at a native level, and English, in a fluid spoke 
+                    conversation level and a little bit of Catalanian
                 </Text>
 
-                <Group>
+                <Group mt='xl' justify='center'>
                     <Anchor href='https://www.linkedin.com/in/eloy-egea-moreno-48172a23a' target='_blank' rel='noopener noreferrer' underline='never'>
                         <FaLinkedin style={iconStyle} />
                     </Anchor>

@@ -21,21 +21,21 @@ function Info(): JSX.Element {
                                         <IoMailOpenSharp />
                                     </ThemeIcon>
                                 }>
-                                    <Anchor href='mailto:eegea03@gmail.com' rel='noopener noreferrer' underline='never'>Email</Anchor>
+                                    <Anchor href='mailto:eegea03@gmail.com' target='_blank' rel='noopener noreferrer' underline='never'>Email</Anchor>
                                 </List.Item>
                                 <List.Item mt='md' icon={
                                     <ThemeIcon>
                                         <FaDiscord />
                                     </ThemeIcon>
                                 }>
-                                    <Anchor href='https://discordapp.com/users/329428934946979844' rel='noopener noreferrer' underline='never'>Discord</Anchor>
+                                    <Anchor href='https://discordapp.com/users/329428934946979844' target='_blank' rel='noopener noreferrer' underline='never'>Discord</Anchor>
                                 </List.Item>
                                 <List.Item mt='md' icon={
                                     <ThemeIcon>
                                         <FaTelegram />
                                     </ThemeIcon>
                                 }>
-                                    <Anchor href='https://t.me/hetoloy' rel='noopener noreferrer' underline='never'>Telegram</Anchor>
+                                    <Anchor href='https://t.me/hetoloy' target='_blank' rel='noopener noreferrer' underline='never'>Telegram</Anchor>
                                 </List.Item>
                             </List>
                         </Paper>

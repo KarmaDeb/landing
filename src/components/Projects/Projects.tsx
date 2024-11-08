@@ -139,10 +139,10 @@ function Projects(): JSX.Element {
             </Tabs.List>
 
             <Tabs.Panel value="projects">
-                <ScrollArea h={250} offsetScrollbars scrollbarSize={4} scrollHideDelay={0}>
+                <ScrollArea h={600} offsetScrollbars scrollbarSize={4} scrollHideDelay={0}>
                     <Grid overflow="hidden" align="stretch" grow>
                         {projects.map((project: ProjectType) => (
-                            <Grid.Col key={project.title} span={4}>
+                            <Grid.Col key={project.title} span={5}>
                                 <Anchor href={project.target} target='_blank' rel='noopener noreferrer' underline='never' style={{ color: 'var(--mantine-color-text)' }}>
                                     {renderComponent(project)}
                                 </Anchor>
