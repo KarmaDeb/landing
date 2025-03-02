@@ -1,7 +1,7 @@
 import { Anchor, Container, Group, Text, Title, rem } from '@mantine/core';
 import { FaLinkedin, FaInstagram, FaXTwitter, FaGithub, FaGitlab } from 'react-icons/fa6';
 import DateFrom from '../Date/DateFrom';
-import avatar from '../../assets/img/avatar.jpg';
+import avatar from '../../assets/img/avatar.jpeg';
 
 function Profile(): JSX.Element {
     const iconStyle = { width: rem(30), height: rem(30) };

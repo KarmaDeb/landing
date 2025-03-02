@@ -12,7 +12,7 @@ import UnixDate from "../Date/UnixDate";
 import { useTabContext } from '../TabContext';
 import { useState } from "react";
 
-import landingPreview from '../../assets/img/landing.preview.png';
+import landingPreview from '../../assets/img/landing.preview.jpeg';
 
 import '@mantine/dates/styles.css';
 
